@@ -19,3 +19,6 @@ puts result
 # paiza-rank-D
 N = gets.to_i
 puts N * 7
+
+str = gets.chomp
+puts str
