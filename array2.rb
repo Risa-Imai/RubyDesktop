@@ -22,3 +22,7 @@ puts N * 7
 
 str = gets.chomp
 puts str
+
+for i in 1..10
+  print "#{i} "
+end
