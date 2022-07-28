@@ -8,5 +8,14 @@ puts tom
 
 sales = [tom, sum, john, bob]
 engineers = [tom, sum, john, bob]
+result = []
 
-puts sales
+# sales.each |sale| do
+#   result.push(sale) if sale.age > 30 end
+# end
+
+puts result
+
+# paiza-rank-D
+N = gets.to_i
+puts N * 7
