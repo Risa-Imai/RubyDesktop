@@ -12,5 +12,5 @@ def num_sum(i)
     puts i ** i
   end
 end
-
+# 入力した数字を二乗する計算
 num_sum(gets.to_i)
