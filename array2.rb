@@ -10,9 +10,11 @@ sales = [tom, sum, john, bob]
 engineers = [tom, sum, john, bob]
 result = []
 
-# sales.each |sale| do
-#   result.push(sale) if sale.age > 30 end
-# end
+sales.each do |sale|
+  if sale.age >= 30
+    result.push(sale)
+  end
+end
 
 puts result
 
