@@ -28,3 +28,22 @@ puts str
 for i in 1..10
   print "#{i} "
 end
+
+puts [1, 2, 3, 4, 5].find { |i| i % 2 == 0 }
+
+def fizzbuzz(i)
+  if i % 15 == 0
+    puts "入力された値は：#{i}"
+    puts "結果は：fizzbuzz"
+  elsif i % 5 == 0
+    puts "入力された値は：#{i}"
+    puts "結果は：fizz"
+  elsif i % 3 == 0
+    puts "入力された値は：#{i}"
+    puts "結果は：buzz"
+  else
+    puts i.to_s
+  end
+end
+
+fizzbuzz(gets.to_i)
