@@ -48,6 +48,8 @@ end
 
 fizzbuzz(gets.to_i)
 
+# https://qiita.com/acekame/items/d93954a971eb24116a16
+
 def fizz_buzz(number)
   if number % 15 == 0
     "FizzBuzz"
