@@ -4,15 +4,17 @@ sum = User.new("Sum", 20)
 john = User.new("john", 30)
 bob = User.new("Tom", 40)
 
-puts tom
-
 sales = [tom, sum, john, bob]
 engineers = [tom, sum, john, bob]
 result = []
 
 sales.each do |sale|
   if sale.age >= 30
-    result.push(sale)
+    engineers.each do |engineer|
+      if sale.name == engineer.name
+        result.push(sale)
+      end
+    end
   end
 end
 
