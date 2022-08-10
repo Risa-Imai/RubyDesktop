@@ -13,4 +13,14 @@ p t
   puts "#{i} #{val}"
 end
 
-p 100.downto(90).select{|x| x % 2 == 0}
+p 100.downto(90).select { |x| x % 2 == 0 }
+
+10.times {
+  print("hello")
+}
+
+print("\n")
+
+3.upto(7) { |num|
+  print("num = ", num, "\n")
+}
