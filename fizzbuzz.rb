@@ -5,9 +5,8 @@ def fizz_buzz(num)
     puts "fizz"
   elsif num.to_i % 3 == 0
     puts "buzz"
-  else
-    puts "入力された内容は" + num.to_s
-  end
+  else num
+    puts "入力された内容は#{num}"   end
 end
 
 puts "数字を入力してください"
