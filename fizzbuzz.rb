@@ -1,13 +1,14 @@
 def fizz_buzz(num)
-  if num.to_i % 15 == 0
+  if num % 15 == 0
     puts "fizzbuzz"
-  elsif num.to_i % 5 == 0
+  elsif num % 5 == 0
     puts "fizz"
-  elsif num.to_i % 3 == 0
+  elsif num % 3 == 0
     puts "buzz"
-  else num
-    puts "入力された内容は#{num}"   end
+  else
+    puts "入力された内容は#{num}"
+  end
 end
 
 puts "数字を入力してください"
-fizz_buzz(gets)
+fizz_buzz(gets.to_i)
