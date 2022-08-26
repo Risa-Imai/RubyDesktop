@@ -11,4 +11,11 @@ def fizz_buzz(num)
 end
 
 puts "数字を入力してください"
-fizz_buzz(gets.to_i)
+num = gets.to_i
+fizz_buzz(num)
+
+# begin
+#   if num != num
+#     raise RuntimeError, "入力された内容は:#{num}"
+#   end
+# end
