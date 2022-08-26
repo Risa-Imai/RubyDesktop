@@ -11,11 +11,12 @@ def fizz_buzz(num)
 end
 
 puts "数字を入力してください"
-num = gets.to_i
-until num.integer?
-  puts "文字ではなく数字を入力してください"
-  num = gets.to_i
+num = gets
+until num.integer? do
+  puts "正しい数字を入力してください"
+  num = gets
 end
+num = num.to_i
 fizz_buzz(num)
 
 # begin
