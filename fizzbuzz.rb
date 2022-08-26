@@ -12,6 +12,10 @@ end
 
 puts "数字を入力してください"
 num = gets.to_i
+until num.integer?
+  puts "文字ではなく数字を入力してください"
+  num = gets.to_i
+end
 fizz_buzz(num)
 
 # begin
