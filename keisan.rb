@@ -18,22 +18,28 @@ elsif i == 3
   b = gets.to_i
   puts a * b
 elsif i == 4
-  begin
-    puts "除算したい数字を2つ入力してください"
-    a = gets.to_i
-    b = gets.to_i
-    puts a / b
-  rescue ZeroDivisionError
-    puts "0で除算は行えません"
+  while i != 0
+    begin
+      puts "除算したい数字を2つ入力してください"
+      a = gets.to_i
+      b = gets.to_i
+      puts a / b
+      break
+    rescue ZeroDivisionError
+      puts "0で除算は行えません"
+    end
   end
 elsif i == 5
-  begin
-    puts "剰余したい数字を2つ入力してください"
-    a = gets.to_i
-    b = gets.to_i
-    puts a % b
-  rescue ZeroDivisionError
-    puts "0で除算は行えません"
+  while i != 0
+    begin
+      puts "剰余したい数字を2つ入力してください"
+      a = gets.to_i
+      b = gets.to_i
+      puts a % b
+      break
+    rescue ZeroDivisionError
+      puts "0で除算は行えません"
+    end
   end
 elsif i == 6
   puts "べき乗したい数字を最初に入力し、次に累乗したい回数を入力してください"
