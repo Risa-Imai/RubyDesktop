@@ -7,4 +7,34 @@ if i == 1
   a = gets.to_i
   b = gets.to_i
   puts a + b
+elsif i == 2
+  puts "減算したい数字を2つ入力してください"
+  a = gets.to_i
+  b = gets.to_i
+  puts a - b
+elsif i == 3
+  puts "乗算したい数字を2つ入力してください"
+  a = gets.to_i
+  b = gets.to_i
+  puts a * b
+elsif i == 4
+  puts "除算したい数字を2つ入力してください"
+  a = gets.to_i
+  b = gets.to_i
+  puts a / b
+elsif i == 5
+  puts "剰余したい数字を2つ入力してください"
+  a = gets.to_i
+  b = gets.to_i
+  puts a % b
+elsif i == 6
+  puts "べき乗したい数字を最初に入力し、次に累乗したい回数を入力してください"
+  a = gets.to_i
+  b = gets.to_i
+  puts a ** b
+elsif i == 7
+  puts "プログラムを終了します"
+else
+  puts "プログラムを終了します"
 end
+puts "お疲れ様でした"
