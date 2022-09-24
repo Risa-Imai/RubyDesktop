@@ -21,6 +21,11 @@ elsif i == 4
   puts "除算したい数字を2つ入力してください"
   a = gets.to_i
   b = gets.to_i
+  if b == 0
+    puts "0で除算は出来ません"
+    puts "1以上の数字を入力してください"
+    b = gets.to_i
+  end
   puts a / b
 elsif i == 5
   puts "剰余したい数字を2つ入力してください"
